@@ -8,64 +8,64 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <body>
 <script>
 
-//æ³¨å†Œæ–¹æ³•
+//×¢²á·½·¨
 function reg()
 {
 	var username = document.getElementById("username").value;
 	var email = document.getElementById("email").value;
 	var student = document.getElementById("student").value;
-	if(document.getElementById("username").checkValidity()//åˆ¤æ–­ç”¨æˆ·åæ˜¯å¦é€šè¿‡æ ¡éªŒ
-	  &&document.getElementById("email").checkValidity()//åˆ¤æ–­ç”µå­é‚®ç®±æ˜¯å¦é€šè¿‡æ ¡éªŒ
-	  &&document.getElementById("student").checkValidity()//åˆ¤æ–­å­¦å·æ˜¯å¦é€šè¿‡æ ¡éªŒ
+	if(document.getElementById("username").checkValidity()//ÅĞ¶ÏÓÃ»§ÃûÊÇ·ñÍ¨¹ıĞ£Ñé
+	  &&document.getElementById("email").checkValidity()//ÅĞ¶Ïµç×ÓÓÊÏäÊÇ·ñÍ¨¹ıĞ£Ñé
+	  &&document.getElementById("student").checkValidity()//ÅĞ¶ÏÑ§ºÅÊÇ·ñÍ¨¹ıĞ£Ñé
 	)
 	{
 		alert(
-			'ç”¨æˆ·åï¼š'+username+'\n'+
-			'ç”µå­é‚®ç®±ï¼š'+email+'\n'+
-			'å­¦å·ï¼š'+student+'\n'+
-			'æ³¨å†ŒæˆåŠŸ!!!\n'
+			'ÓÃ»§Ãû£º'+username+'\n'+
+			'µç×ÓÓÊÏä£º'+email+'\n'+
+			'Ñ§ºÅ£º'+student+'\n'+
+			'×¢²á³É¹¦!!!\n'
 		)	
 	}
 }
 </script>
 <form>
 <fieldset>
-<legend>æ ¡å›­ç½‘æ³¨å†Œé¡µé¢</legend>
+<legend>Ğ£Ô°Íø×¢²áÒ³Ãæ</legend>
 <center>
 <div style="padding:5px;width=100px">
-	<h4>æ³¨å†Œæ ¡å›­ç½‘å¸å·</h4>
+	<h4>×¢²áĞ£Ô°ÍøÕÊºÅ</h4>
 	<table>
 		<tr>
-			<td>ç”¨æˆ·å</td>
+			<td>ÓÃ»§Ãû</td>
 			<td><input id="username" 
 			type="text" 
 			required="true" 
 			autofocus="true" 
-			placeholder="è¯·è¾“å…¥ç”¨æˆ·å"
+			placeholder="ÇëÊäÈëÓÃ»§Ãû"
 			pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{7,}$"/></td>
 			<td><font color="red">*</font></td>
 		</tr>
 		<tr>
-			<td>ç”µå­é‚®ç®±</td>
+			<td>µç×ÓÓÊÏä</td>
 			<td><input id="email" 
 			type="email" 
-			placeholder="è¯·è¾“å…¥ç”µå­é‚®ç®±"
+			placeholder="ÇëÊäÈëµç×ÓÓÊÏä"
 			required="true"/></td>
 			<td><font color="red">*</font></td>
 		</tr>
 		<tr>
-			<td>å­¦å·</td>
+			<td>Ñ§ºÅ</td>
 			<td><input id="student" 
 			type="text" 
 			required="true" 
-			placeholder="è¯·è¾“å…¥å­¦å·"
+			placeholder="ÇëÊäÈëÑ§ºÅ"
 			pattern="^[0-9]*$"/></td>
 			<td><font color="red">*</font></td>
 		</tr>
 	</table>
 </div>
-<input type="submit" value="æ³¨å†Œè´¦å·" onclick="reg()">
-<input type="reset" value="é‡ç½®">
+<input type="submit" value="×¢²áÕËºÅ" onclick="reg()">
+<input type="reset" value="ÖØÖÃ">
 </center>
 </fieldset>
 </form>
