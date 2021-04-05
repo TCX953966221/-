@@ -1,0 +1,176 @@
+*{
+	padding:0; 
+	margin:0;
+}
+li{ 
+	list-style:none;
+}
+a{ 
+	text-decoration:none;
+}
+.nav{ 
+	width:100%;
+	height:40px;
+	margin-top:50px;
+	background-color: red;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+.nav .list1{ 
+	width:1000px; 
+	height:40px;
+	margin:0 auto;
+}
+.list1 li{ 
+	float:left; 
+	position:relative;
+}
+.list1 li>a{ 
+	padding:0 30px; 
+	line-height:40px; 
+	display:block; 
+	color:white; 
+	font-size:16px;
+}
+.list1 li:hover>a{ 
+	background-color: red;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	color:#fff;
+}
+.list1 li:hover .down{ 
+	display:block;
+}
+.list1 li .down{
+	width:175px; 
+	background:#333; 
+	position:absolute;
+	top:40px;
+	left:0; 
+	display:none;
+} 
+.list1 li .down a{ 
+	display:block;
+	line-height:30px;
+	color:white; 
+	font-size:14px;
+	padding-left:30px;
+}
+.list1 li .down a:hover{ 
+	background-color: red;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	color:#fff;
+}
+p.big_title{
+	margin-left: 600px;
+	font-size: 30px;
+}
+p.txt{
+	margin-left: 700px;
+	font-size: 14px;
+	margin-bottom: 50px;
+	color: blue;
+}
+.ulist{
+	margin: 0 450px;
+}
+
+.list{
+	list-style: none;
+	margin-top: 20px;
+}
+
+.point{
+	color: red;
+}
+
+.title{
+	display: inline-block;
+	width: 80px;
+}
+
+.input1{
+	display: inline-block;
+	width: 200px;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.input2{
+	display: inline-block;
+	width: 300px;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.input3{
+	display: inline-block;
+	margin-left: 100px;
+	margin-bottom: 10px;
+}
+
+.option{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.hint{
+	list-style: none;
+	width: 400px;
+	height: auto;
+	line-height: 20px;
+	font-size: 12px;
+	color:gray;
+	margin-left: 100px;
+}
+.picture{
+	display: inline-block;
+	width: 100px;
+	height: 25px;
+
+}
+.agree_txt{
+	width: 400px;
+	height: auto;
+	line-height: 20px;
+	font-size: 12px;
+	color:gray;
+}
+.reg{
+	border-radius: 20px;
+	width: 100px;
+	height: 30px;
+	background-color:green;
+	color: white;
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: 500px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.res{
+	border-radius: 20px;
+	width: 100px;
+	height: 30px;
+	background-color:green;
+	color: white;
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: 100px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.hint a{
+	margin-left: 40px;
+}
+.transition{
+	width: 1550px;
+	height: 100px;
+	background-color: red;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	transition: width 2s;
+}
+.transition:hover{
+	width:0px;
+}

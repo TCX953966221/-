@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页</title>
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<ul class="list1">
+				<li><a href="#">首页</a></li> 
+				<li><a href="#">这里有一些操作</a>
+					<div class="down">
+						<a href="index.html">登录</a>
+						<a href="index2.html">注册</a>
+					</div>
+				</li>
+				<li><a href="#">关于</a></li>
+			</ul>
+		</div>
+		<form onsubmit="return login()">
+			<fieldset>
+				<p class="big_title">登录页面</p>
+				<ul class='ulist'>
+					<li class="list">
+						<span class="point">*</span>
+						<span class="title">电子邮箱</span>
+						<input class="input1" type="text" id="mail" onblur="check_mail_login()" required="required" placeholder="example@mail.com">
+						<span>@</span>
+						<select class="option" id="option">
+							<option value="wtu.edu">wtu.edu</option>
+							<option value="163.com">163.com</option>
+							<option value="qq.com">qq.com</option>
+						</select>
+						<span id="mailInfo"></span>
+					</li>
+					
+					<li class="list">
+						<span class="point">*</span>
+						<span class="title">密码</span>
+						<input class="input2" type="password" id="password" onblur="check_psw_login()" required="required" placeholder="6~16位字符">
+						<span id="pswInfo"></span>
+					</li>
+					
+					<li class="list">
+						<span class="point">*</span>
+						<span class="title">验证码</span>
+						<input class="input1" type="text" id="code" onblur="check_code_login()" required="required" >
+						<img class="picture" src="img/testify.jpg" />
+						<span id="codeInfo"></span>
+					</li>
+					<li class="hint">请填写图中的字符，不区分大小写<a>别点了,我不会变</a></li>
+					
+				</ul>
+				<input class="login" type="submit" value="立即登录">
+				<input class="res" type="reset" value="重置" />
+				<p class="txt">还没有账号？<a href="index2.html">点击注册</a></p>
+			</fieldset>
+		</form>
+		<p>这是一个过渡效果</p>
+		<div class="transition">
+		</div>
+	</body>
+</html>
